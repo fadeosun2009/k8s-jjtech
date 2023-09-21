@@ -3,7 +3,7 @@
 ###################################################3
 General commands
 ##########################
-aws eks 
+
 alias k=kubectl
 alias kgp="kubectl get po" 
 alias kgn="kubectl get nodes"

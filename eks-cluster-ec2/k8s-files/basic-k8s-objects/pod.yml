@@ -16,4 +16,10 @@ metadata:
       requests:
         cpu: 100m
         memory: 200Mi
+<<<<<<< HEAD
    
+=======
+    ports:
+    - containerPort:  80
+      name:  http
+>>>>>>> f27594256919e801c36b0b52aaa90edfc69b5447
