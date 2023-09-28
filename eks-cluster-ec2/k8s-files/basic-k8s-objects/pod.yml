@@ -21,5 +21,9 @@ metadata:
 =======
     ports:
     - containerPort:  80
+<<<<<<< HEAD
+      name:  http
+>>>>>>> f27594256919e801c36b0b52aaa90edfc69b5447
+=======
       name:  http
 >>>>>>> f27594256919e801c36b0b52aaa90edfc69b5447
