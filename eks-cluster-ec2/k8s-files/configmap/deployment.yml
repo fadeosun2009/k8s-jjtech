@@ -26,4 +26,4 @@
 #           valueFrom:
 #             configMapKeyRef:
 #               name: jjtech-cm
-#               key: app-version
+#              key: app-version
