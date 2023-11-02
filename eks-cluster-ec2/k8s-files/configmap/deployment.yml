@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # apiVersion: apps/v1
 # kind: Deployment
 # metadata:
@@ -27,3 +28,34 @@
 #             configMapKeyRef:
 #               name: jjtech-cm
 #              key: app-version
+=======
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+  labels:
+    app: my-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+        version: v1.0.0
+    spec:
+      containers:
+      - name: my-app
+        image: deekshithsn/k8s-deployment-strategies
+        ports:
+        - name: http
+          containerPort: 8080
+        env:
+        - name: VERSION
+          valueFrom:
+            configMapKeyRef:
+              name: jjtech-cm
+              key: app-version
+>>>>>>> 66c98b2d9b8f953c6e5cf300c69446229d8a2bac
